@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    background-color: #F3F5FC;
+    width: 100%;
+    font-family: inter;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+}
+
+.cabeza_imagen{
+    width: 100px;
+    margin:20px 0 0 10px ;
+
+
+}
+
+main{
+    display: flex;
+}
+.cuerpo_seccion1{
+    margin-left: 240px;
+    margin-top: 84px;
+
+}
+#cuerpo_seccion1_input{
+    min-width: 580px;
+    resize: none;
+    min-height: 288px;
+    background-color: transparent;
+    border:none ;
+    font-size: 1.5rem;
+    font-family: inter;
+    font-weight: 400;
+}
+
+#cuerpo_seccion1_input:focus{
+    outline: none;
+}
+
+.cuerpo_seccion1_botones{
+    display: flex;
+}
+
+.cuerpo_seccion1_icono{
+    width: 12px;
+    height: 12px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.cuerpo_seccion1_aviso{
+    font-size: 0.7rem;
+    color: #45565F;
+}
+
+.cuerpo_seccion1_botones2{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.cuerpo_seccion1_boton{
+    width: 220px;
+    padding: 12px;
+    font-size: 1rem;
+    
+}
+
+.cuerpo_seccion1_boton_encriptar{
+    margin-right: 20px;
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.cuerpo_seccion1_boton_desencriptar{
+    background-color: transparent;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
+
+
+.cuerpo_seccion2{
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 0;
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px 0 #0003;
+}
+
+.resultado_mostrar{
+
+    font-size: 1rem;
+
+}
+
+.cuerpo_seccion2_divicion1_input{
+    text-align: justify;
+}
+
+#cuerpo_seccion2_divicion1_dibujo{
+    width: 250px;
+    margin-top: 30px;
+    filter: drop-shadow(0 0 7px #000);
+}
+
+.contenedor_parrafo{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.cuerpo_seccion2_divicion2{
+    text-align: center;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-right: 15px;
+    
+}
+
+.cuerpo_seccion2_divicion2_botonCopiar{
+    background-color: transparent;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+
+}
+
+.cuerpo_seccion1_boton_desencriptar:hover{
+    background-color: #D8DFE8;
+}
+
+.cuerpo_seccion2_divicion2_botonCopiar:hover{
+    background-color: #D8DFE8;
+}
+
+@media (max-width:1160px){
+    body{
+        width: 100%;
+        margin: auto;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+        margin: 0;
+        gap: 40px;
+    }
+
+    .cuerpo_seccion1{
+        margin: 0;
+    }
+
+    .cuerpo_seccion2{
+        margin: 0;
+        margin: auto;
+        width: 500px;
+    }
+
+    #cuerpo_seccion1_input{
+        min-width: 100%;
+        resize: none;
+        min-height: 200px;
+        background-color:transparent;
+        border:none ;
+        font-size: 1.5rem;
+        font-family: inter;
+        font-weight: 400;
+    }
+
+    .cuerpo_seccion2{
+        width: 90%;
+        height: max-content;
+    }
+
+    #cuerpo_seccion2_divicion1_dibujo{
+        display: none;
+    }
+
+
+    .cuerpo_seccion2_divicion2 {
+        margin: 0;
+        display: flex; /* Añadir display flex */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    }
+
+    .cuerpo_seccion2_divicion2_botonCopiar {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        reflect: auto;
+    }
+}
+
+@media (max-width:516px) {
+    
+    .cuerpo_seccion1_botones2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cuerpo_seccion1_boton_encriptar{
+
+        margin: 5px
+
+    
+    }
+    
+    .cuerpo_seccion1_boton_desencriptar{
+        margin: 5px
+
+    }
+}

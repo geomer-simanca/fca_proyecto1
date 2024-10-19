@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cuerpo_body">
+    <header class="cabeza">
+        <img class="cabeza_imagen" src="imagenes/logo2.png" alt="logo Alura" title="logo de Alura">
+
+    </header>
+
+
+    <main class="cuerpo">
+
+
+
+        <section class="cuerpo_seccion1">
+            <div class="contenedor-caja-texto">
+                <textarea maxlength="220" id="cuerpo_seccion1_input" class="cuerpo_seccion1_input" type="text" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="cuerpo_seccion1_botones">
+                <img class="cuerpo_seccion1_icono" src="imagenes/bi_exclamation-circle-fill.png" alt="alerta">
+                <h2 class="cuerpo_seccion1_aviso">  Solo letras minusculas y sin tildes </h2>
+            </div>
+            <div class="cuerpo_seccion1_botones2">
+                <button onclick="encriptar()" class="cuerpo_seccion1_boton cuerpo_seccion1_boton_encriptar" >Encriptar</button>
+                <button onclick="desencriptar()" class="cuerpo_seccion1_boton cuerpo_seccion1_boton_desencriptar" >Desencriptar</button>
+            </div>
+        </section >
+
+
+
+
+        <section class="cuerpo_seccion2">
+            <div class="resultado_mostrar">
+                <p id="cuerpo_seccion2_divicion1_input" class="cuerpo_seccion2_divicion1_input" > </p>
+            </div>
+            <div class="cuerpo_seccion2_divicion1">
+                <img id="cuerpo_seccion2_divicion1_dibujo" src="imagenes/enigma.png"  alt="imagen espera de texto">
+            </div>
+            <div class="contenedor_parrafo">
+                <h3 id="cuerpo_seccion2_divicion1_mensaje1">
+                    Ningun mensaje fue encontrado 
+                </h3>
+                <span  id="cuerpo_seccion2_divicion1_mensaje2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </span>
+            </div> 
+            <div class="cuerpo_seccion2_divicion2">
+                <button onclick="copiarAlPortapapeles()" id="cuerpo_seccion2_divicion2_botonCopiar" class="cuerpo_seccion1_boton cuerpo_seccion2_divicion2_botonCopiar">
+                    copiar
+                </button>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <script src="app.js" defer></script>
+    
+</body>
+</html>
